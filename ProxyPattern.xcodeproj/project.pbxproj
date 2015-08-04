@@ -14,6 +14,9 @@
 		1089932B1B70FB02001B84F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1089932A1B70FB02001B84F8 /* Images.xcassets */; };
 		1089932E1B70FB02001B84F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1089932C1B70FB02001B84F8 /* LaunchScreen.xib */; };
 		1089933A1B70FB02001B84F8 /* ProxyPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 108993391B70FB02001B84F8 /* ProxyPatternTests.m */; };
+		1089934A1B70FB0F001B84F8 /* AbstractProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108993441B70FB0F001B84F8 /* AbstractProxy.m */; };
+		1089934B1B70FB0F001B84F8 /* AbstractExcute.m in Sources */ = {isa = PBXBuildFile; fileRef = 108993461B70FB0F001B84F8 /* AbstractExcute.m */; };
+		1089934C1B70FB0F001B84F8 /* ConcreteProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108993481B70FB0F001B84F8 /* ConcreteProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		108993331B70FB02001B84F8 /* ProxyPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		108993381B70FB02001B84F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		108993391B70FB02001B84F8 /* ProxyPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyPatternTests.m; sourceTree = "<group>"; };
+		108993431B70FB0F001B84F8 /* AbstractProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractProxy.h; sourceTree = "<group>"; };
+		108993441B70FB0F001B84F8 /* AbstractProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractProxy.m; sourceTree = "<group>"; };
+		108993451B70FB0F001B84F8 /* AbstractExcute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractExcute.h; sourceTree = "<group>"; };
+		108993461B70FB0F001B84F8 /* AbstractExcute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractExcute.m; sourceTree = "<group>"; };
+		108993471B70FB0F001B84F8 /* ConcreteProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteProxy.h; sourceTree = "<group>"; };
+		108993481B70FB0F001B84F8 /* ConcreteProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteProxy.m; sourceTree = "<group>"; };
+		108993491B70FB0F001B84F8 /* MessageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,10 @@
 				108993221B70FB02001B84F8 /* AppDelegate.m */,
 				108993241B70FB02001B84F8 /* ViewController.h */,
 				108993251B70FB02001B84F8 /* ViewController.m */,
+				1089934D1B70FB20001B84F8 /* AbstractProxy */,
+				108993471B70FB0F001B84F8 /* ConcreteProxy.h */,
+				108993481B70FB0F001B84F8 /* ConcreteProxy.m */,
+				108993491B70FB0F001B84F8 /* MessageProtocol.h */,
 				108993271B70FB02001B84F8 /* Main.storyboard */,
 				1089932A1B70FB02001B84F8 /* Images.xcassets */,
 				1089932C1B70FB02001B84F8 /* LaunchScreen.xib */,
@@ -117,6 +131,17 @@
 				108993381B70FB02001B84F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1089934D1B70FB20001B84F8 /* AbstractProxy */ = {
+			isa = PBXGroup;
+			children = (
+				108993431B70FB0F001B84F8 /* AbstractProxy.h */,
+				108993441B70FB0F001B84F8 /* AbstractProxy.m */,
+				108993451B70FB0F001B84F8 /* AbstractExcute.h */,
+				108993461B70FB0F001B84F8 /* AbstractExcute.m */,
+			);
+			name = AbstractProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1089934B1B70FB0F001B84F8 /* AbstractExcute.m in Sources */,
+				1089934A1B70FB0F001B84F8 /* AbstractProxy.m in Sources */,
 				108993261B70FB02001B84F8 /* ViewController.m in Sources */,
 				108993231B70FB02001B84F8 /* AppDelegate.m in Sources */,
 				108993201B70FB02001B84F8 /* main.m in Sources */,
+				1089934C1B70FB0F001B84F8 /* ConcreteProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
